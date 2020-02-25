@@ -2,12 +2,21 @@
   <style>
     body {
       margin: 0;
-      padding: 2vw;
+      padding: 0;
       overflow: hidden;
-    }
-    iframe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
+    }
+    iframe {
+      width: 10%;
+      height: 10%;
+      min-width: calc(100% - 4vw);
+      min-height: calc(100% - 4vw);
+      max-width: calc(100% - 2px);
+      max-height: calc(100% - 2px);
       padding: 0;
       margin: 0;
       border: 0;
