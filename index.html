@@ -17,6 +17,10 @@
   <script>
     document.body.style.backgroundColor = (() => (
       `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
-    ))()
+    ))();
+    setTimeout(()=> {
+      const iframe = document.querySelector('iframe');
+      iframe.src = `${iframe.src}&flop=${Math.floor(Math.random() * 10000000)}`
+    }, 100);
   </script>
 </html>
