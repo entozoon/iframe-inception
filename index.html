@@ -15,8 +15,8 @@
     <iframe src="https://iframe-inception.netlify.com"></iframe>
   <body>
   <script>
-    document.body.style.backgroundColor = () => (
+    document.body.style.backgroundColor = (() => (
       `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
-    );
+    ))()
   </script>
 </html>
